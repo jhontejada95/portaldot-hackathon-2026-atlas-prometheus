@@ -1,0 +1,33 @@
+node_modules/
+.env
+.env.local
+evidence/
+.runtime/
+.local-portaldot-node/
+sentinel-extension/.runtime/
+
+# Local design source material and browser-capture workspaces. The shipped
+# product assets live in dashboard/public/brand and sentinel-extension/assets.
+ATLAS_DESIGN_HANDOFF/
+ATLAS_DESIGN_HANDOFF_FLAT/
+brand-handoff/
+dashboard/landing-visual-qa.png
+dashboard/dist/
+
+# Keep the deployable ink! artifact trio, but never commit Rust build caches.
+contracts/atlas-epoch-credits/target/debug/
+contracts/atlas-epoch-credits/target/ink/wasm32-unknown-unknown/
+contracts/atlas-epoch-credits/target/ink/release/
+contracts/atlas-epoch-credits/target/CACHEDIR.TAG
+contracts/atlas-epoch-credits/target/ink/CACHEDIR.TAG
+contracts/atlas-epoch-credits/target/.rustc_info.json
+contracts/atlas-epoch-credits/target/ink/.rustc_info.json
+contracts/atlas-epoch-credits/target/ink/.target
+contracts/atlas-sentinel-registry/target/debug/
+contracts/atlas-sentinel-registry/target/ink/wasm32-unknown-unknown/
+contracts/atlas-sentinel-registry/target/ink/release/
+contracts/atlas-sentinel-registry/target/CACHEDIR.TAG
+contracts/atlas-sentinel-registry/target/ink/CACHEDIR.TAG
+contracts/atlas-sentinel-registry/target/.rustc_info.json
+contracts/atlas-sentinel-registry/target/ink/.rustc_info.json
+contracts/atlas-sentinel-registry/target/ink/.target
