@@ -13,7 +13,7 @@ Atlas turns a campaign into a route that people can understand and complete. A p
 
 ## Technical highlights
 
-The submission is a responsive React/Vite application with an accessible English/Spanish landing and an interactive Atlas dashboard. The UI uses Motion for lightweight transitions, responsive CSS layouts and a shared visual system for map routes, campaign cards, reward surfaces and protocol views. Portaldot wallet access is handled through the Polkadot extension interface without exposing signing secrets. Campaign state is modeled around explicit quest rules, proof requirements, review status, cooldowns and bounded reward sinks so the interface can explain what each action does before a participant commits to it. The application separates the participant journey from the protocol-team journey: Campaign Board and Reward Hub serve contributors, while Campaign Studio and campaign analytics describe the operator layer. The source is intentionally read-only at the product surface; no private keys, seed phrases or automatic financial promises are required. The build is self-contained under `dashboard/`, uses a standard Vite production build and can be reproduced with the commands below.
+The submission is a responsive React/Vite application with an accessible English/Spanish landing and an interactive Atlas dashboard. The UI uses Motion for lightweight transitions, responsive CSS layouts and a shared visual system for map routes, campaign cards, reward surfaces and protocol views. Portaldot wallet access is handled through the Polkadot extension interface without exposing signing secrets. Campaign state is modeled around explicit quest rules, proof requirements, review status, cooldowns and bounded reward sinks so the interface can explain what each action does before a participant commits to it. The application separates the participant journey from the protocol-team journey: Campaign Board and Reward Hub serve contributors, while Campaign Studio and campaign analytics describe the operator layer. The repository also includes a minimal EVM/revive `EvidenceAnchor` candidate under `contracts/` for the proof layer. The source is intentionally honest about deployment evidence: no private keys, seed phrases or unsupported contract address are included. The build is self-contained under `dashboard/`, uses a standard Vite production build and can be reproduced with the commands below.
 
 ## Run locally
 
@@ -33,7 +33,7 @@ npm run preview
 
 ## Submission scope
 
-This public snapshot contains the Atlas campaign, quest, proof, progress and reward experience prepared for the Portaldot Hacker House. The earlier observability prototype, server services and contract experiments are intentionally excluded from this submission snapshot; the original Atlas repository remains the source of record for that discarded work. The included code and assets are the complete runnable web experience for the submitted demo.
+This public snapshot contains the Atlas campaign, quest, proof, progress and reward experience prepared for the Portaldot Hacker House, plus the minimal proof-contract candidate in `contracts/`. The earlier observability prototype and server services remain in the original Atlas repository. The included code and assets are the complete runnable web experience for the submitted demo; any contract deployment claim must be backed by a real receipt and finality evidence.
 
 ## License
 
